@@ -1,19 +1,56 @@
-# README – Standalone qgis2web Export
+Prosjekt tilgjengelige næringsarealer
+=====================================
 
-This export is completely "self-contained".
+Created with QGIS2WebMap by NIKA.
 
-To view the map, simply open "index.html" by double-clicking it.
-No web server or additional software is required.
 
-The map works because all the required JavaScript libraries are included
-in the export. The application loads the GeoJSON layer data and their styles
-directly from the local files.
+HOW TO OPEN IT
+--------------
 
-## Publishing on a Website
+Upload this folder to a web server and open index.html from there. Keep index.html and onlymap.js together. Opening index.html straight off your disk does not work in Chrome, Edge or Safari, which refuse to load the runtime that way (Firefox loads it); that is what the single-file export is for.
 
-If you upload the entire folder to a web server, the map will work 
-immediately by opening the "index.html" file.
+It works in any modern web browser - Chrome, Edge, Firefox or Safari. You do not
+need QGIS, an account, or an internet connection.
 
-Example:
 
-"https://www.example.com/my-map/index.html"
+WHAT IS IN THE FILE
+-------------------
+
+Everything. The map, its styling and all of its data are in here, which is
+why it works offline and why you can copy it anywhere.
+
+This map is 11.0 MB and contains 788 map features.
+
+
+PRIVACY
+-------
+
+Opening this map sends one anonymous usage report to NIKA, who make the software
+that draws it. That report can say which version drew the map, how many layers
+and features it had, and the address of the page it ran on. It never contains
+the map's data, and never anything about who opened it.
+
+Nothing else leaves your machine.
+
+
+IF THE MAP DOES NOT APPEAR
+--------------------------
+
+- Some email previews and file managers show attachments without running
+  JavaScript, so you will see a short message instead of the map. Open the file
+  in a web browser instead.
+- The map is drawn with WebGL. Very old machines, or a remote desktop with
+  graphics acceleration disabled, may not support it.
+
+
+DOING MORE WITH THIS MAP
+------------------------
+
+The map is described by readable HTML inside the file - layers, colours and
+controls are all attributes you can change. An AI assistant such as Claude or
+Codex can edit it for you: ask it to read the file and change what you want.
+
+  Guides:   https://docs.nikaplanet.com
+  Hosting:  https://www.nikaplanet.com/onlymap
+
+-- QGIS2WebMap by NIKA, OnlyMap runtime 0.13.4 (sha256 c016b3dc2274185c)
